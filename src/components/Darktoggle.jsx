@@ -1,36 +1,14 @@
 import React from "react";
 import { Moon, BrightnessLow } from "react-bootstrap-icons";
 
-const Darktoggle = () => {
-  // $(".darktoggle-root").on("click", function () {
-  //   $(".toggle").toggleClass("left-0");
-  //   $(".toggle").toggleClass("right-auto");
-  // });
-
-  // const toggleRoot = document.querySelector(".darktoggle-root");
-
-  // toggleRoot.addEventListener("click", function () {
-  //   console.log("OK");
-  // });
-
-  const html = document.querySelector("html");
-  const toggle = document.querySelector(".toggle");
-  const darkToggleRoot = document.querySelector(".darktoggle-root");
-
+function Darktoggle() {
   const toggleListener = () => {
-    // $("html").toggleClass("dark");
-    // $(".toggle").toggleClass("left-0");
-    // $(".toggle").toggleClass("left-auto");
-    // $(".toggle").toggleClass("right-0");
-    // $(".toggle").toggleClass("right-auto");
-    // $(".darktoggle-root").toggleClass("bg-slate-700");
-    html.classList.toggle("dark");
-    toggle.classList.toggle("left-0");
-    toggle.classList.toggle("left-auto");
-    toggle.classList.toggle("right-0");
-    toggle.classList.toggle("right-auto");
-    darkToggleRoot.classList.toggle("bg-slate-700");
-    console.log("OK");
+    document.querySelector("html").classList.toggle("dark");
+    document.querySelector(".toggle").classList.toggle("left-0");
+    document.querySelector(".toggle").classList.toggle("left-auto");
+    document.querySelector(".toggle").classList.toggle("right-0");
+    document.querySelector(".toggle").classList.toggle("right-auto");
+    document.querySelector(".darkToggleRoot").classList.toggle("bg-slate-700");
   };
 
   return (
@@ -47,6 +25,6 @@ const Darktoggle = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Darktoggle;
