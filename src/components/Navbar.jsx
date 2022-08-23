@@ -2,9 +2,23 @@ import React from "react";
 import "./css/navbar.css";
 import "./css/fonts.css";
 import "./css/classes.css";
+import "./css/dark-toggle.css";
 import { List } from "react-bootstrap-icons";
+import $ from "jquery";
+import Darktoggle from "./Darktoggle";
 
 const Navbar = () => {
+  // const darkMode = document.querySelector(".theme-toggle");
+  // function darkify() {
+  //   document.documentElement.classList.toggle("theme--night");
+  // }
+  // darkMode.addEventListener("click", darkify);
+  // darkify();
+
+  $(".theme-toggle").on("click", function () {
+    alert("OK");
+  });
+
   return (
     <div className="navbar-root absolute w-full h-20 local-primary-font">
       <div className="navbar-wrapper h-full w-11/12 mx-auto flex justify-between items-center">
@@ -16,7 +30,7 @@ const Navbar = () => {
             GedeApriana
           </a>
         </div>
-        <div className="navbar-list w-[380px] hidden md:inline-block">
+        <div className="navbar-list w-[380px] hidden md:inline-block ml-auto">
           <ul className="w-full flex justify-between items-center">
             <li>
               <a
@@ -52,7 +66,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="text-slate-50 local-primary-font active:text-slate-50 inline-block bg-blue-400 hover:bg-blue-300 transition-all py-2 px-4 rounded-md mx-1 font-semibold"
+                className="text-slate-50 local-primary-font active:text-slate-50 inline-block bg-violet-500 hover:bg-blue-300 transition-all py-2 px-4 rounded-md mx-1 font-semibold"
                 href={"#link"}
               >
                 Contact
@@ -60,6 +74,8 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+
+        <Darktoggle />
 
         <div className="hamburger-menu md:hidden border border-slate-700 rounded-lg p-1">
           <List className="text-white text-4xl" />

@@ -23,7 +23,7 @@ const hero = () => {
         <div className="hero-bottom mt-10 flex justify-center items-center gap-5">
           <a
             href={"#link"}
-            className="local-primary-font rounded-md bg-blue-400 hover:bg-blue-300 py-2 px-4"
+            className="local-primary-font rounded-md bg-violet-500 hover:bg-blue-300 py-2 px-4"
           >
             Email Me <EnvelopeHeart className="inline" />
           </a>

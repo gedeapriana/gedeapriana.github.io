@@ -8,13 +8,13 @@ import designerIcon from "./assets/skills/designer.png";
 
 const Skills = () => {
   return (
-    <div className="skills-root w-full py-20">
+    <div className="skills-root w-full py-20 dark:bg-slate-900">
       <div className="text-slate-900 skill-wrapper w-11/12 md:h-[300px] mx-auto md:w-11/12 2xl:w-3/5 flex flex-col md:flex-row transition-all duration-300 local-primary-font">
         <div className="skills-header md:w-4/12 w-full transition-all duration-300 md:h-full flex items-start flex-col justify-center p-3 gap-4 py-6">
-          <h1 className="skills-desc-head text-2xl font-bold">
+          <h1 className="skills-desc-head text-2xl font-bold text-violet-500">
             What can i do?
           </h1>
-          <p className="text-semibold">
+          <p className="text-semibold text-slate-900 dark:text-slate-50">
             Skill sets include both hard skills and soft skills. Hard skills are
             teachable abilities or skills that can be quantified.
           </p>
@@ -25,9 +25,7 @@ const Skills = () => {
               <img src={frontEndIcon} alt="" className="h-full" />
             </div>
             <div className="skill-desc w-full h-4/6 flex justtify-start items-center flex-col overflow-y-auto">
-              <h3 className="text-xl text-slate-900 font-bold pt-3 ">
-                Back-end
-              </h3>
+              <h3 className="text-xl font-bold pt-3 ">Front-end</h3>
               <p className="text-center px-6">
                 html, css, javascript, tailwind, bootstrap, sass, and also
                 little bit front end framework like React js
@@ -39,12 +37,9 @@ const Skills = () => {
               <img src={backEndIcon} alt="" className="h-full" />
             </div>
             <div className="skill-desc w-full h-4/6 flex justtify-start items-center flex-col overflow-y-auto">
-              <h3 className="text-xl text-slate-900 font-bold pt-3 ">
-                Back-end
-              </h3>
+              <h3 className="text-xl font-bold pt-3 ">Back-end</h3>
               <p className="text-center px-6">
-                html, css, javascript, tailwind, bootstrap, sass, and also
-                little bit front end framework like React js
+                c, c++, nodejs, and also query language, mySQL
               </p>
             </div>
           </div>
@@ -53,12 +48,10 @@ const Skills = () => {
               <img src={designerIcon} alt="" className="h-full" />
             </div>
             <div className="skill-desc w-full h-4/6 flex justtify-start items-center flex-col overflow-y-auto">
-              <h3 className="text-xl text-slate-900 font-bold pt-3 ">
-                Back-end
-              </h3>
+              <h3 className="text-xl font-bold pt-3 ">Designer</h3>
               <p className="text-center px-6">
-                html, css, javascript, tailwind, bootstrap, sass, and also
-                little bit front end framework like React js
+                Figma, Adobe Illustrator, Photoshop, Premiere, and also After
+                Effect
               </p>
             </div>
           </div>
