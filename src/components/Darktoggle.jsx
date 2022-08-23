@@ -14,21 +14,32 @@ const Darktoggle = () => {
   //   console.log("OK");
   // });
 
+  const html = document.querySelector("html");
+  const toggle = document.querySelector(".toggle");
+  const darkToggleRoot = document.querySelector(".darktoggle-root");
+
   const toggleListener = () => {
-    $("html").toggleClass("dark");
-    $(".toggle").toggleClass("left-0");
-    $(".toggle").toggleClass("left-auto");
-    $(".toggle").toggleClass("right-0");
-    $(".toggle").toggleClass("right-auto");
-    $(".darktoggle-root").toggleClass("bg-slate-700");
+    // $("html").toggleClass("dark");
+    // $(".toggle").toggleClass("left-0");
+    // $(".toggle").toggleClass("left-auto");
+    // $(".toggle").toggleClass("right-0");
+    // $(".toggle").toggleClass("right-auto");
+    // $(".darktoggle-root").toggleClass("bg-slate-700");
+    html.classList.toggle("dark");
+    toggle.classList.toggle("left-0");
+    toggle.classList.toggle("left-auto");
+    toggle.classList.toggle("right-0");
+    toggle.classList.toggle("right-auto");
+    darkToggleRoot.classList.toggle("bg-slate-700");
+    // console.log("OK");
   };
 
   return (
     <div
       onClick={toggleListener}
-      className="darktoggle-root w-16 h-8 bg-slate-50 ml-auto md:ml-4 mx-4 rounded-full relative flex justify-between items-center px-1 cursor-pointer transition duration-500"
+      className="darktoggle-root w-14 h-6 bg-slate-50 ml-auto md:ml-4 mx-4 rounded-full relative flex justify-between items-center px-1 cursor-pointer transition duration-500"
     >
-      <div className="toggle absolute h-6 w-6 rounded-full bg-red-400 top-0 left-0 bottom-0 right-auto my-auto mx-1 transition duration-500"></div>
+      <div className="toggle absolute h-4 w-4 rounded-full bg-violet-400 top-0 left-0 bottom-0 right-auto my-auto mx-1 transition duration-500"></div>
       <div className="moon">
         <Moon className="block text-slate-50" />
       </div>
