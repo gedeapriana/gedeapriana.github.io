@@ -1,6 +1,5 @@
 import React from "react";
 import { Moon, BrightnessLow } from "react-bootstrap-icons";
-import $ from "jquery";
 
 const Darktoggle = () => {
   // $(".darktoggle-root").on("click", function () {
