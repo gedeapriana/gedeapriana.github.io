@@ -15,6 +15,7 @@ const Darktoggle = () => {
   // });
 
   const toggleListener = () => {
+    $("html").toggleClass("dark");
     $(".toggle").toggleClass("left-0");
     $(".toggle").toggleClass("left-auto");
     $(".toggle").toggleClass("right-0");

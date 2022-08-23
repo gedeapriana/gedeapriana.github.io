@@ -28,7 +28,7 @@ const Skills = () => {
               <h3 className="text-xl font-bold pt-3 ">Front-end</h3>
               <p className="text-center px-6">
                 html, css, javascript, tailwind, bootstrap, sass, and also
-                little bit front end framework like React js
+                little bit front end framework like React
               </p>
             </div>
           </div>
