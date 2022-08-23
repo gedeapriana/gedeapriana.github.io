@@ -4,7 +4,6 @@ import "./css/fonts.css";
 import "./css/classes.css";
 import "./css/dark-toggle.css";
 import { List } from "react-bootstrap-icons";
-import $ from "jquery";
 import Darktoggle from "./Darktoggle";
 
 const Navbar = () => {
@@ -14,11 +13,6 @@ const Navbar = () => {
   // }
   // darkMode.addEventListener("click", darkify);
   // darkify();
-
-  $(".theme-toggle").on("click", function () {
-    alert("OK");
-  });
-
   return (
     <div className="navbar-root absolute w-full h-20 local-primary-font">
       <div className="navbar-wrapper h-full w-11/12 mx-auto flex justify-between items-center">

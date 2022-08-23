@@ -30,7 +30,7 @@ const Darktoggle = () => {
     toggle.classList.toggle("right-0");
     toggle.classList.toggle("right-auto");
     darkToggleRoot.classList.toggle("bg-slate-700");
-    // console.log("OK");
+    console.log("OK");
   };
 
   return (
@@ -43,7 +43,7 @@ const Darktoggle = () => {
         <Moon className="block text-slate-50" />
       </div>
       <div className="sun">
-        <BrightnessLow className="block text-2xl text-yellow-300" />
+        <BrightnessLow className="block text-1xl text-yellow-300" />
       </div>
     </div>
   );
