@@ -9,6 +9,7 @@ function Darktoggle() {
     document.querySelector(".toggle").classList.toggle("right-0");
     document.querySelector(".toggle").classList.toggle("right-auto");
     document.querySelector(".darktoggle-root").classList.toggle("bg-slate-700");
+    document.querySelector(".darktoggle-root").classList.toggle("bg-slate-50");
   };
 
   return (
