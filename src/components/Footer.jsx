@@ -10,7 +10,7 @@ import {
   CloudDownload,
   EnvelopeHeart,
   Facebook,
-  GeoAlt,
+  GeoAlt, Heart, HeartFill,
   Instagram,
   Send,
   TelephonePlus,
@@ -39,22 +39,21 @@ const Footer = () => {
           </div>
 
           <div className="footer-contact w-full flex flex-col md:flex-row my-5">
-
               <div className="drop-line w-full md:w-7/12 p-8">
                   <h1 className={"text-xl text-violet-400 font-bold py-3"}>Let's Talk</h1>
                   <p className={"text-slate-900 dark:text-slate-50"}>To request a quote or want to meet up for coffee, contact me directly or fill out the form and i will get back to you soon</p>
                   <form action="" className={"w-full py-5 flex flex-col items-start justify-center"}>
                     <div className="full-name w-full my-1">
                       <label htmlFor={"full-name"} className={"font-semibold text-violet-400"}>Full Name</label>
-                      <input id={"full-name"} type="text" placeholder={"ex: Apriana"} className={"w-full bg-violet-100 dark:bg-slate-900 p-2 rounded-md my-2"} required/>
+                      <input id={"full-name"} type="text" placeholder={"ex: Apriana"} className={"w-full bg-violet-100 dark:bg-slate-900 p-2 rounded-md my-2 dark:text-slate-50"} required/>
                     </div>
                     <div className="email w-full my-1">
                       <label htmlFor={"email"} className={"font-semibold text-violet-400"}>Email</label>
-                      <input id={"email"} type="email" placeholder={"Your email here..."} className={"w-full bg-violet-100 dark:bg-slate-900 p-2 rounded-md my-2"} required/>
+                      <input id={"email"} type="email" placeholder={"Your email here..."} className={"w-full bg-violet-100 dark:bg-slate-900 p-2 rounded-md my-2 dark:text-slate-50"} required/>
                     </div>
                     <div className="email w-full my-1">
                       <label htmlFor={"message"} className={"font-semibold text-violet-400"}>Message</label>
-                      <textarea name="message" id="message" className={"block w-full bg-violet-100 p-2 rounded-md my-2 dark:bg-slate-900 h-40"} placeholder={"Your message here..."}></textarea>
+                      <textarea name="message" id="message" className={"block w-full bg-violet-100 p-2 rounded-md my-2 dark:bg-slate-900 h-40 dark:text-slate-50"} placeholder={"Your message here..."}></textarea>
                     </div>
 
                     <button type={"submit"} className={"bg-violet-400 px-4 py-2 text-slate-50 my-5 md:text-lg text-md ml-auto rounded-md font-semibold hover:bg-blue-300 transition-all"}>Send Message<Send className={"inline-block ml-2"} /></button>
@@ -67,12 +66,16 @@ const Footer = () => {
                 <a href={"#link"} className={"text-slate-900 dark:text-slate-50 py-1 hover:font-bold transition-all block"}> <EnvelopeHeart className={"inline-block mr-1"}/> gedeapriana36@gmail.com</a>
                 <a href={"#link"} className={"text-slate-50 font-bold text-xl bg-violet-400 py-2 px-4 inline-block my-5 rounded-lg hover:bg-blue-300 transition-all"}> <CloudDownload className={"inline mr-2"} />Download Resume</a>
                 <div className="social-icons flex gap-3 my-10">
-                  <a href={"#link"} className="whatsapp text-violet-400 hover:text-slate-50 social-icon text-4xl dark:text-slate-50 hover:scale-[1.03] transition-all hover:bg-violet-400 p-1 rounded-lg dark:hover:text-slate-900"><Whatsapp /></a>
-                  <a href={"#link"} className="instagram text-violet-400 hover:text-slate-50 social-icon text-4xl dark:text-slate-50 hover:scale-[1.03] transition-all hover:bg-violet-400 p-1 rounded-lg dark:hover:text-slate-900"><Instagram /></a>
-                  <a href={"#link"} className="facebook text-violet-400 hover:text-slate-50 social-icon text-4xl dark:text-slate-50 hover:scale-[1.03] transition-all hover:bg-violet-400 p-1 rounded-lg dark:hover:text-slate-900"> <Facebook /> </a>
+                  <a href={"#link"} className="whatsapp text-violet-400 hover:text-slate-50 social-icon text-2xl dark:text-slate-50 hover:scale-[1.03] transition-all hover:bg-violet-400 p-1 rounded-lg dark:hover:text-slate-800"><Whatsapp /></a>
+                  <a href={"#link"} className="instagram text-violet-400 hover:text-slate-50 social-icon text-2xl dark:text-slate-50 hover:scale-[1.03] transition-all hover:bg-violet-400 p-1 rounded-lg dark:hover:text-slate-800"><Instagram /></a>
+                  <a href={"#link"} className="facebook text-violet-400 hover:text-slate-50 social-icon text-2xl dark:text-slate-50 hover:scale-[1.03] transition-all hover:bg-violet-400 p-1 rounded-lg dark:hover:text-slate-800"> <Facebook /> </a>
                 </div>
               </div>
 
+          </div>
+
+          <div className="footer-footer w-full">
+            <p className={"text-center dark:text-slate-50 text-slate-900"}>Copyright ©2022 All rights reserved | made with < HeartFill className={"inline"} /> with <a href={"https://www.instagram.com/gdaprianaa"} className={"font-bold"} rel={"noreferrer"} target={"_blank"}>gedeapriana</a></p>
           </div>
       </div>
     </div>
