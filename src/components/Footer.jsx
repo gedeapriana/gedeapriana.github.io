@@ -6,6 +6,7 @@ import "./css/footer.css"
 import reactIcon from "./assets/footer/react.png"
 import sassIcon from "./assets/footer/sass.png"
 import tailwindIcon from "./assets/footer/tailwind.png"
+import {Send} from "react-bootstrap-icons";
 
 
 
@@ -47,10 +48,10 @@ const Footer = () => {
                       <textarea name="message" id="message" className={"block w-full bg-violet-100 p-2 rounded-md my-2 h-40"} placeholder={"Your message here..."}></textarea>
                     </div>
 
-                    <button type={"submit"} className={"bg-violet-400 px-4 py-2 text-slate-50 my-5 md:text-lg text-md ml-auto rounded-md font-semibold"}>Send Message</button>
+                    <button type={"submit"} className={"bg-violet-400 px-4 py-2 text-slate-50 my-5 md:text-lg text-md ml-auto rounded-md font-semibold"}>Send Message<Send className={"inline-block ml-2"} /></button>
                   </form>
               </div>
-              <div className="contact-me bg-blue-400 w-full md:w-5/12 p-8">ini contact</div>
+              <div className="contact-me bg-blue-400 w-full md:w-5/12 p-8">ini contact </div>
 
           </div>
       </div>
