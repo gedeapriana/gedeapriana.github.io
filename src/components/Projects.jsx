@@ -61,7 +61,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="projects-content w-full h-[500px] md:h-[400px] my-5 flex flex-col md:flex-row justify-center items-center gap-2">
+        <div className="projects-content w-full h-[500px] md:h-[400px] my-5 flex flex-col md:flex-row justify-center items-center gap-3">
           <div className="project-section-1 md:w-1/2 w-full h-full">
             <div className="mini-atm card w-full h-full rounded-2xl bg-slate-50 dark:bg-slate-800 p-5 shadow-lg flex">
               <div className="card-img w-1/3 h-full flex justify-center items-center">
@@ -92,7 +92,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="project-section-2 md:w-1/2 w-full h-full flex md:flex-col gap-2">
+          <div className="project-section-2 md:w-1/2 w-full h-full flex md:flex-col gap-3">
             <div className="project-section-2-sec1 md:w-full md:h-1/2 w-1/2 h-full">
               <div className="tamagotchi card w-full h-full rounded-2xl bg-slate-50 dark:bg-slate-800 p-5 shadow-lg flex flex-col md:flex-row items-center justify-between">
                 <div className="card-img w-full md:w-1/3 h-1/3 md:h-full flex justify-center items-center">
