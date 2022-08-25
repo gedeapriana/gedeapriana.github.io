@@ -10,7 +10,7 @@ import {
   CloudDownload,
   EnvelopeHeart,
   Facebook,
-  GeoAlt, Heart, HeartFill,
+  GeoAlt, HeartFill,
   Instagram,
   Send,
   TelephonePlus,
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-footer w-full">
-            <p className={"text-center dark:text-slate-50 text-slate-900"}>Copyright ©2022 All rights reserved | made with < HeartFill className={"inline"} /> with <a href={"https://www.instagram.com/gdaprianaa"} className={"font-bold"} rel={"noreferrer"} target={"_blank"}>gedeapriana</a></p>
+            <p className={"text-center dark:text-slate-50 text-slate-900"}>Copyright ©2022 All rights reserved | made with < HeartFill className={"inline"} /> by <a href={"https://www.instagram.com/gdaprianaa"} className={"font-bold"} rel={"noreferrer"} target={"_blank"}>gedeapriana</a></p>
           </div>
       </div>
     </div>

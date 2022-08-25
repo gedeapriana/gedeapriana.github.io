@@ -7,14 +7,28 @@ import { List } from "react-bootstrap-icons";
 import Darktoggle from "./Darktoggle";
 
 const Navbar = () => {
-  // const darkMode = document.querySelector(".theme-toggle");
-  // function darkify() {
-  //   document.documentElement.classList.toggle("theme--night");
-  // }
-  // darkMode.addEventListener("click", darkify);
-  // darkify();
+
+  window.addEventListener('scroll', function () {
+    let scrollY = this.scrollY;
+    if(scrollY > 0) {
+      document.querySelector('.navbar-root').classList.add("bg-slate-900");
+      document.querySelector('.navbar-root').classList.add("border-b");
+      document.querySelector('.navbar-root').classList.add("border-slate-400");
+      document.querySelector('.navbar-root').classList.add("dark:border-slate-700");
+      document.querySelector('.navbar-root').classList.add("bg-opacity-25");
+      document.querySelector('.navbar-root').classList.add("backdrop-blur-lg");
+    } else {
+      document.querySelector('.navbar-root').classList.remove("bg-slate-900");
+      document.querySelector('.navbar-root').classList.remove("border-b");
+      document.querySelector('.navbar-root').classList.remove("border-slate-400");
+      document.querySelector('.navbar-root').classList.remove("dark:border-slate-700");
+      document.querySelector('.navbar-root').classList.remove("bg-opacity-25");
+      document.querySelector('.navbar-root').classList.remove("backdrop-blur-lg");
+    }
+  })
+
   return (
-    <div className="navbar-root absolute w-full h-20 local-primary-font">
+    <div className="navbar-root fixed z-10 w-full h-20 local-primary-font">
       <div className="navbar-wrapper h-full w-11/12 mx-auto flex justify-between items-center">
         <div className="navbar-brand">
           <a
