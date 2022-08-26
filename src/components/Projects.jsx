@@ -50,7 +50,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="projects-root w-full local-primary-font dark:bg-slate-900">
+    <div className="projects-root w-full local-primary-font dark:bg-slate-900" id={"project-root"}>
       <div className="projects-wrapper md:w-11/12 2xl:w-3/5 w-11/12 mx-auto py-40">
         <div className="projects-header w-full">
           <h1 className="block text-center text-2xl font-bold text-violet-400 p-3">

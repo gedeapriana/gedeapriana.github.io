@@ -8,7 +8,7 @@ import designerIcon from "./assets/skills/designer.png";
 
 const Skills = () => {
   return (
-    <div className="skills-root w-full py-20 dark:bg-slate-900">
+    <div className="skills-root w-full py-20 dark:bg-slate-900" id={"skills-root"}>
       <div className="text-slate-900 skill-wrapper w-11/12 md:h-[300px] mx-auto md:w-11/12 2xl:w-3/5 flex flex-col md:flex-row transition-all duration-300 local-primary-font">
         <div className="skills-header md:w-4/12 w-full transition-all duration-300 md:h-full flex items-start flex-col justify-center p-3 gap-4 py-6">
           <h1 className="skills-desc-head text-2xl font-bold text-violet-500">

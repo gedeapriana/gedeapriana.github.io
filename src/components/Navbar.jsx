@@ -3,7 +3,7 @@ import "./css/navbar.css";
 import "./css/fonts.css";
 import "./css/classes.css";
 import "./css/dark-toggle.css";
-import { List } from "react-bootstrap-icons";
+import {List, PersonLinesFill} from "react-bootstrap-icons";
 import Darktoggle from "./Darktoggle";
 
 const Navbar = () => {
@@ -28,7 +28,7 @@ const Navbar = () => {
   })
 
   return (
-    <div className="navbar-root fixed z-10 w-full h-20 local-primary-font">
+    <div className="navbar-root transition duration-200 ease-in-out fixed z-10 w-full h-20 local-primary-font">
       <div className="navbar-wrapper h-full w-11/12 mx-auto flex justify-between items-center">
         <div className="navbar-brand">
           <a
@@ -43,31 +43,31 @@ const Navbar = () => {
             <li>
               <a
                 className="local-primary-font text-slate-200 font-semibold active:text-slate-50"
-                href={"#link"}
+                href={"#home-root"}
               >
                 Home
               </a>
             </li>
             <li>
               <a
-                className="local-primary-font text-slate-300 font-medium hover:text-slate-50"
-                href={"#link"}
+                className="local-primary-font text-slate-200 font-semibold hover:text-slate-50 active:text-slate-50"
+                href={"#aboutme-root"}
               >
                 About
               </a>
             </li>
             <li>
               <a
-                className="local-primary-font text-slate-300 font-medium hover:text-slate-50"
-                href={"#link"}
+                className="local-primary-font text-slate-300 font-semibold hover:text-slate-50 active:text-slate-50"
+                href={"#skills-root"}
               >
                 Skills
               </a>
             </li>
             <li>
               <a
-                className="local-primary-font text-slate-300 font-medium hover:text-slate-50"
-                href={"#link"}
+                className="local-primary-font text-slate-300 font-semibold hover:text-slate-50 active:text-slate-50"
+                href={"#project-root"}
               >
                 Project
               </a>
@@ -75,9 +75,9 @@ const Navbar = () => {
             <li>
               <a
                 className="text-slate-50 local-primary-font active:text-slate-50 inline-block bg-violet-500 hover:bg-blue-300 transition-all py-2 px-4 rounded-md mx-1 font-semibold"
-                href={"#link"}
+                href={"#footer-root"}
               >
-                Contact
+                Contact <PersonLinesFill className={"inline"} />
               </a>
             </li>
           </ul>

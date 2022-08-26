@@ -12,7 +12,7 @@ const Aboutme = () => {
 Currently studying for a bachelor's degree in computer science, Udayana University`;
 
   return (
-    <div className="aboutme-root w-full dark:bg-slate-900 py-40">
+    <div className="aboutme-root w-full dark:bg-slate-900 py-40" id={"aboutme-root"}>
       <div className="aboutme-wrapper w-11/12 md:w-[750px] mx-auto h-[600px] md:h-[550px] relative">
         <div className="about-image absolute w-[300px] h-[350px] md:w-[350px] md:h-[400px] left-0 top-0 rounded-3xl overflow-hidden shadow-lg">
           <img src={personalImage} alt="gede apriana" className="h-full " />

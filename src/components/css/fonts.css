@@ -1,8 +1,15 @@
-@font-face {
+font-face {
   font-family: "Open-sans";
   src: url("../assets/fonts/opensans.ttf");
 }
+
 @font-face {
   font-family: "Quicksand";
   src: url("../assets/fonts/quicksand.ttf");
-}/*# sourceMappingURL=fonts.css.map */
+}
+@font-face {
+  font-family: "Pixellari";
+  src: url("../assets/fonts/pixellari.ttf");
+}
+
+/*# sourceMappingURL=fonts.css.map */

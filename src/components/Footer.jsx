@@ -21,7 +21,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="footer-root w-full dark:bg-slate-800 local-primary-font bg-slate-50">
+    <div className="footer-root w-full dark:bg-slate-800 local-primary-font bg-slate-50" id={"footer-root"}>
       <div className="footer-wrapper mx-auto md:w-11/12 2xl:w-3/5 w-11/12 py-16">
           <div className="footer-header w-full">
               <h1 className={"block text-center text-2xl font-bold text-violet-400"}>Featured By</h1>
@@ -61,9 +61,9 @@ const Footer = () => {
               </div>
               <div className="contact-me w-full md:w-5/12 p-8">
                 <h1 className={"text-xl text-violet-400 font-bold py-3"}>Contact me</h1>
-                <a href={"#link"} className={"font-semibold py-2 text-slate-900 dark:text-slate-50 text-lg hover:font-bold transition-all block"}>< GeoAlt className={"inline-block mr-2"}/>Pantai Lebih st., <span>Gianyar, Bali, Indonesia</span></a>
-                <a href={"#link"} className={"text-slate-900 dark:text-slate-50 py-1 hover:font-bold transition-all block"}> <TelephonePlus className={"inline-block mr-1"}/> +62 813 3948 6902</a>
-                <a href={"#link"} className={"text-slate-900 dark:text-slate-50 py-1 hover:font-bold transition-all block"}> <EnvelopeHeart className={"inline-block mr-1"}/> gedeapriana36@gmail.com</a>
+                <a href={"#link"} className={"font-semibold py-2 text-slate-700 dark:text-slate-50 text-lg hover:font-bold transition-all block"}>< GeoAlt className={"inline-block mr-2"}/>Pantai Lebih st., <span>Gianyar, Bali, Indonesia</span></a>
+                <a href={"#link"} className={"text-slate-700 dark:text-slate-50 py-1 hover:font-bold transition-all block"}> <TelephonePlus className={"inline-block mr-1"}/> +62 813 3948 6902</a>
+                <a href={"#link"} className={"text-slate-700 dark:text-slate-50 py-1 hover:font-bold transition-all block"}> <EnvelopeHeart className={"inline-block mr-1"}/> gedeapriana36@gmail.com</a>
                 <a href={"#link"} className={"text-slate-50 font-bold text-xl bg-violet-400 py-2 px-4 inline-block my-5 rounded-lg hover:bg-blue-300 transition-all"}> <CloudDownload className={"inline mr-2"} />Download Resume</a>
                 <div className="social-icons flex gap-3 my-10">
                   <a href={"#link"} className="whatsapp text-violet-400 hover:text-slate-50 social-icon text-2xl dark:text-slate-50 hover:scale-[1.03] transition-all hover:bg-violet-400 p-1 rounded-lg dark:hover:text-slate-800"><Whatsapp /></a>
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-footer w-full">
-            <p className={"text-center dark:text-slate-50 text-slate-900"}>Copyright ©2022 All rights reserved | made with < HeartFill className={"inline"} /> by <a href={"https://www.instagram.com/gdaprianaa"} className={"font-bold"} rel={"noreferrer"} target={"_blank"}>gedeapriana</a></p>
+            <p className={"text-center dark:text-slate-50 text-slate-500"}>Copyright ©2022 All rights reserved | made with < HeartFill className={"inline"} /> by <a href={"https://www.instagram.com/gdaprianaa"} className={"font-bold"} rel={"noreferrer"} target={"_blank"}>gedeapriana</a></p>
           </div>
       </div>
     </div>
