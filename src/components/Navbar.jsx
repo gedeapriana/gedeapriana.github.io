@@ -27,13 +27,24 @@ const Navbar = () => {
     }
   })
 
+  const showHamburgerMenu = () => {
+    document.querySelector('.hamburger-list').classList.toggle('scale-100');
+    document.querySelector('.hamburger-list').classList.toggle('scale-0');
+    //
+    // console.log('Ok')
+  }
+  // document.querySelector(".hamburger-menu").addEventListener('click', function () {
+  //   document.querySelector(".hamburger-list").classList.toggle('scale-100');
+  //   document.querySelector(".hamburger-list").classList.toggle('scale-0');
+  // })
+
   return (
     <div className="navbar-root transition duration-200 ease-in-out fixed z-10 w-full h-20 local-primary-font">
       <div className="navbar-wrapper h-full w-11/12 mx-auto flex justify-between items-center">
         <div className="navbar-brand">
           <a
-            href={"#link"}
-            className="text-white text-2xl local-primary-font font-bold"
+            href={"#home-root"}
+            className="text-white nav-brand text-2xl local-primary-font font-bold"
           >
             GedeApriana
           </a>
@@ -85,8 +96,18 @@ const Navbar = () => {
 
         <Darktoggle />
 
-        <div className="hamburger-menu md:hidden border border-slate-700 rounded-lg p-1">
+        <div onClick={showHamburgerMenu} className="hamburger-menu md:hidden border border-slate-700 rounded-lg p-1 cursor-pointer" id={"hamburger-menu"}>
           <List className="text-white text-4xl" />
+        </div>
+
+        <div className="transition duration-300 hamburger-list origin-top-right scale-0 fixed w-[250px] top-24 rounded-2xl overflow-hidden right-7 bg-slate-50 dark:bg-slate-800 shadow-2xl md:hidden p-4">
+          <ul className={"w-full h-full flex flex-col justify-center items-center"}>
+            <li className={"w-full rounded-md overflow-hidden"}><a className={"w-full block py-2 text-center hover:bg-slate-200 transition-all text-slate-700 hover:font-bold dark:text-slate-50 dark:hover:bg-slate-700"} href={"#home-root"}>Home</a></li>
+            <li className={"w-full rounded-md overflow-hidden"}><a className={"w-full block py-2 text-center hover:bg-slate-200 transition-all text-slate-700 hover:font-bold dark:text-slate-50 dark:hover:bg-slate-700"} href={"#aboutme-root"}>About</a></li>
+            <li className={"w-full rounded-md overflow-hidden"}><a className={"w-full block py-2 text-center hover:bg-slate-200 transition-all text-slate-700 hover:font-bold dark:text-slate-50 dark:hover:bg-slate-700"} href={"#skills-root"}>Skills</a></li>
+            <li className={"w-full rounded-md overflow-hidden"}><a className={"w-full block py-2 text-center hover:bg-slate-200 transition-all text-slate-700 hover:font-bold dark:text-slate-50 dark:hover:bg-slate-700"} href={"#project-root"}>Project</a></li>
+            <li className={"w-full rounded-md overflow-hidden"}><a className={"w-full block py-2 text-center hover:bg-slate-200 transition-all font-bold dark:text-slate-50 bg-violet-400 text-slate-50 dark:hover:bg-slate-700"} href={"#footer-root"}>Contact</a></li>
+          </ul>
         </div>
       </div>
     </div>

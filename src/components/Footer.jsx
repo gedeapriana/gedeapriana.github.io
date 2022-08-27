@@ -44,7 +44,7 @@ const Footer = () => {
                   <p className={"text-slate-900 dark:text-slate-50"}>To request a quote or want to meet up for coffee, contact me directly or fill out the form and i will get back to you soon</p>
                   <form action="" className={"w-full py-5 flex flex-col items-start justify-center"}>
                     <div className="full-name w-full my-1">
-                      <label htmlFor={"full-name"} className={"font-semibold text-violet-400"}>Full Name</label>
+                      <label htmlFor={"full-name"} className={"font-semibold text-violet-400"}>Name</label>
                       <input id={"full-name"} type="text" placeholder={"ex: Apriana"} className={"w-full bg-violet-100 dark:bg-slate-900 p-2 rounded-md my-2 dark:text-slate-50"} required/>
                     </div>
                     <div className="email w-full my-1">
