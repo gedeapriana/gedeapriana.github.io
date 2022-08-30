@@ -5,6 +5,7 @@ import "./css/classes.css";
 import "./css/dark-toggle.css";
 import {List, PersonLinesFill} from "react-bootstrap-icons";
 import Darktoggle from "./Darktoggle";
+import navbarBrand from "./assets/navbar/brand.png";
 
 const Navbar = () => {
 
@@ -46,7 +47,7 @@ const Navbar = () => {
             href={"#home-root"}
             className="text-white nav-brand text-2xl local-primary-font font-bold"
           >
-            GedeApriana
+            <img src={navbarBrand} className={"md:w-48 w-40"} alt="gedeapriana"/>
           </a>
         </div>
         <div className="navbar-list w-[380px] hidden md:inline-block ml-auto">
